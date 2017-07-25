@@ -8,4 +8,4 @@ css:
 	done
 
 publish:
-	s3 cp . s3://sladvalley.co.uk/ --recursive --exclude ".git/*"
+	aws s3 cp . s3://sladvalley.co.uk/ --recursive --exclude ".git/*"
